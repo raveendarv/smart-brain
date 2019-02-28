@@ -94,13 +94,17 @@ class App extends Component {
 	};
 
 	calculateFaceLocation = (data) => {
-		//console.log(data.outputs[0].data.concepts[0]);
+		console.log(data.outputs[0].data.concepts[0]);
 		const clarifaiFace = data.outputs[0].data.concepts;
 		return {
 			guess1: clarifaiFace[0].name,
+			value1: (clarifaiFace[0].value * 100).toFixed(2),
 			guess2: clarifaiFace[1].name,
+			value2: (clarifaiFace[1].value * 100).toFixed(2),
 			guess3: clarifaiFace[2].name,
-			guess4: clarifaiFace[3].name
+			value3: (clarifaiFace[2].value * 100).toFixed(2),
+			guess4: clarifaiFace[3].name,
+			value4: (clarifaiFace[3].value * 100).toFixed(2)
 		};
 	};
 
