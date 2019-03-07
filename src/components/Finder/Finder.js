@@ -5,7 +5,7 @@ const Finder = ({ imageUrl, box }) => {
 	return (
 		<div className="center ma ">
 			<div className="absolute mt2 center">
-				<img id="inputimage" className="w-55 pa1" alt="" src={imageUrl} width="400px" height="auto" />
+				<img id="inputimage" className="w-55 pa1" alt="" src={imageUrl} width="350px" height="100%" />
 
 				<ul className="w-45 white f4 pa3 non">
 					<li>
